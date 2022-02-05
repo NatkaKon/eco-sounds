@@ -91,6 +91,16 @@ body {
 .play:hover{
     filter: brightness(.75);
 }
+.pause {
+    position: absolute;
+    background-image: url(/assets/svg/pause.svg);
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    background-size: contain;
+    border: 0;
+    transition: 0.4s;
+}
 
 .footer_container {
     font-size: 25px;
