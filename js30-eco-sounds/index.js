@@ -5,7 +5,7 @@ const audio = new Audio();
 //PLAY PAUSE 
 
 function playAudio() {
-        audio.src = '../assets/audio/forest.mp3';
+        audio.src = './assets/audio/forest.mp3';
         audio.currentTime = 0;
         audio.play();
         isPlay = true;
