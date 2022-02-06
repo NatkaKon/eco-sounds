@@ -5,7 +5,7 @@ const audio = new Audio();
 //PLAY PAUSE 
 
 function playAudio() {
-        audio.src = './assets/audio/forest.mp3';
+        audio.src = '../assets/audio/forest.mp3';
         audio.currentTime = 0;
         audio.play();
         isPlay = true;
@@ -40,8 +40,8 @@ const images = document.querySelectorAll('.main');
 
 function changeImage(event, index) {
     if (event.target.hasAttribute('data_item')) {
-        console.log (images.style.backgroundImage)
-      // images.style.backgroundImage = `url(/assets/img/${event.target.dataset.item}/${index}.jpg)` 
+        
+      images.style.backgroundImage = `url(../assets/img/${event.target.dataset.item}/${index}.jpg)` 
    }
 }
 
