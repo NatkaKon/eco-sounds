@@ -2,6 +2,7 @@ let isPlay = false;
 const play = document.querySelector('.play');
 const audio = new Audio();
 
+//PLAY PAUSE 
 
 function playAudio() {
         audio.src = './assets/audio/forest.mp3';
@@ -9,7 +10,7 @@ function playAudio() {
         audio.play();
         isPlay = true;
 } 
-    
+
 function pauseAudio() {
     audio.pause();
     isPlay = false;
@@ -29,55 +30,70 @@ play.addEventListener('click', toggleClass);
 
 
 
+
+//change pictures
+
 /*
-function playAudio() {
-    if (isPlay = true) {
-        audio.src = './assets/audio/forest.mp3';
-        audio.currentTime = 0;
-        audio.play();
-        play.classList.add('pause');
-        isPlay = true;
+const navItem = [...document.querySelectorAll('.nav_item')];
+const navList = document.querySelector('.nav_list'); //Родитель
+const images = document.querySelectorAll('.main');
 
-    } else {
-        play.classList.remove('pause');
-        audio.pause();
-        isPlay = false;
-    }  
+function changeImage(event, index) {
+    if (event.target.hasAttribute('data_item')) {
+        console.log (images.style.backgroundImage)
+      // images.style.backgroundImage = `url(/assets/img/${event.target.dataset.item}/${index}.jpg)` 
+   }
 }
-play.addEventListener('click', playAudio)
+
+navList.addEventListener('click', changeImage)*/
 
 
 
-function toggleAudio() {
-     play.classList.toggle('.pause');
-    } 
 
-play.addEventListener('click', toggleAudio)
+
+
+
+
+
+
+
+
+
+
+/*
+const suscribe = () => {
+    navList.addEventListener('click', changeImage)
+
+}
+ suscribe();
+
+/*
+function changeImage(event) {
+    if (event.target.classList.contains('nav_item')) {
+    audio.src = `./assets/audio/${event}/${index + 1}.mp3`;
+    images.style.backgroundImage = `url(/assets/img/${event}/${index + 1}.jpg)`;
+   }
+}
+
+
+navList.addEventListener('click', changeImage)
 */
-
-
-
-
-
-
-
-/*const navItem = [...document.querySelectorAll('.nav_item')];
-const navList = document.querySelector('.nav_list');
-const main = document.querySelector('main');
-
-
-
+/*
+function changeBgImg(){
+    block.style.backgroundImage = "url('https://cs7062.vk.me/c540107/v540107359/2729/fYQlS_23QdA.jpg')";
+}*/
 /*
 navList.addEventListener('click', (event) => {
-    changeImage(event)
+    changeImage(event);
 });
 
 function changeImage(event) {
-    if (event.target.classList.contains('nav_item')) {
-    main.forEach((img, index) => img.src = `./assets/img/${event.target.dataset.item}/${index + 1}.jpg` )
-    }
-}
+if(event.target.classList.contains('nav_item')) {
+  // здесь код функции, меняющей src изображений
+  images.forEach((img, index) => img.src = `./assets/img/${event.target.dataset.item}/${index + 1}.jpg`);
+} 
+}*/
 
-console.log(event.target.classList.contains('nav_item'));
-//console.log(main);
-*/
+
+
+
