@@ -48,6 +48,9 @@ function changeImage(event, index) {
 navList.addEventListener('click', changeImage)*/
 
 
+console.log(`Общий балл:40\nВёрстка +10\nАктивный в данный момент интерактивный элемент выделяется стилем +10\nКнопка Play/Pause +20`)
+
+
 
 
 
