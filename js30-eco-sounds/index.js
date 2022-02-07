@@ -34,7 +34,7 @@ play.addEventListener('click', toggleClass);
 const navItem = [...document.querySelectorAll('.nav_item')];
 const navList = document.querySelector('.nav_list'); //Родитель
 const images = document.querySelector('.main');
-
+/*
 function changeImage(event, index) {
     if (event.target.hasAttribute('data_item')) {
         
@@ -44,7 +44,7 @@ function changeImage(event, index) {
 }
 
 navList.addEventListener('click', changeImage)
-
+*/
 
 const one = document.querySelector('.one');
 const two = document.querySelector('.two');
