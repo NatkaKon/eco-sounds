@@ -56,7 +56,7 @@ const icon = document.querySelector('.icon');
     
 one.onclick = function () {
     console.log('work');
-    images.style.background = 'url("../assets/img/solovey.jpg")';
+    images.style.background = 'url("./assets/img/solovey.jpg")';
     audio.src = './assets/audio/solovey.mp3';
     audio.play();
     play.classList.toggle('pause');
@@ -68,7 +68,7 @@ one.onclick = function () {
 
 two.onclick = function () {
     console.log('play');
-    images.style.background = 'url("../assets/img/drozd.jpg")';
+    images.style.background = 'url(./assets/img/drozd.jpg)';
     audio.src = './assets/audio/drozd.mp3';
     audio.play();
     
@@ -76,21 +76,21 @@ two.onclick = function () {
 
 three.onclick = function () {
     console.log('play');
-    images.style.background = 'url("../assets/img/malinovka.jpg")';
+    images.style.background = 'url(./assets/img/malinovka.jpg)';
     audio.src = './assets/audio/malinovka.mp3';
     audio.play();
     
 }
 four.onclick = function () {
     console.log('play');
-    images.style.background = 'url("../assets/img/zhavoronok.jpg")';
+    images.style.background = 'url(./assets/img/zhavoronok.jpg)';
     audio.src = './assets/audio/zhavoronok.mp3';
     audio.play();
     
 }
 five.onclick = function () {
     console.log('play');
-    images.style.background = 'url("../assets/img/slavka.jpg")';
+    images.style.background = 'url(./assets/img/slavka.jpg)';
     audio.src = './assets/audio/slavka.mp3';
     audio.play();
     
@@ -99,7 +99,7 @@ five.onclick = function () {
 
 icon.onclick = function () {
     console.log('play');
-    images.style.background = 'url("../assets/img/forest.jpg")';
+    images.style.background = 'url(./assets/img/forest.jpg)';
     audio.src = './assets/audio/forest.mp3';
     audio.play();
     
