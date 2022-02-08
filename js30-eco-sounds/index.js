@@ -33,7 +33,7 @@ play.addEventListener('click', toggleClass);
 
 const navItem = [...document.querySelectorAll('.nav_item')];
 const navList = document.querySelector('.nav_list'); //Родитель
-const images = document.querySelector('.main');
+const images = document.querySelector('main');
 /*
 function changeImage(event, index) {
     if (event.target.hasAttribute('data_item')) {
@@ -54,8 +54,9 @@ const five = document.querySelector('.five');
 const icon = document.querySelector('.icon');
 
     
-one.onclick = function (images) {
+one.onclick = function () {
     console.log('work');
+    images.style.background = 'url("../assets/img/solovey.jpg")';
     audio.src = './assets/audio/solovey.mp3';
     audio.play();
     play.classList.toggle('pause');
@@ -65,39 +66,47 @@ one.onclick = function (images) {
     //images.style.paddingBottom = '500px';    
 }
 
-two.onclick = function (images) {
+two.onclick = function () {
     console.log('play');
+    images.style.background = 'url("../assets/img/drozd.jpg")';
     audio.src = './assets/audio/drozd.mp3';
     audio.play();
     
 }
 
-three.onclick = function (images) {
+three.onclick = function () {
     console.log('play');
+    images.style.background = 'url("../assets/img/malinovka.jpg")';
     audio.src = './assets/audio/malinovka.mp3';
     audio.play();
     
 }
-four.onclick = function (images) {
+four.onclick = function () {
     console.log('play');
+    images.style.background = 'url("../assets/img/zhavoronok.jpg")';
     audio.src = './assets/audio/zhavoronok.mp3';
     audio.play();
     
 }
-five.onclick = function (images) {
+five.onclick = function () {
     console.log('play');
+    images.style.background = 'url("../assets/img/slavka.jpg")';
     audio.src = './assets/audio/slavka.mp3';
     audio.play();
     
 }
 
-icon.onclick = function (images) {
+
+icon.onclick = function () {
     console.log('play');
+    images.style.background = 'url("../assets/img/forest.jpg")';
     audio.src = './assets/audio/forest.mp3';
     audio.play();
     
 }
-/*function newBackGround (element,background) {
+
+/*
+function newBackGround (element,background) {
     element.style.backgroundImage = "url("+background+")";
  }
  
@@ -105,3 +114,8 @@ icon.onclick = function (images) {
 
 
  console.log(`Общий балл:52\nВёрстка +10\nАктивный в данный момент интерактивный элемент выделяется стилем +10\nПри кликах по интерактивным элементам меняется изображение + 2 балл(а)\nКнопка Play/Pause +20`)
+
+
+
+
+ 
